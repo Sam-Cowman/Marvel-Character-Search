@@ -1,0 +1,17 @@
+body {
+    background-color: red;
+}
+
+header{
+    color:yellow
+}
+
+header.align-center {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+}
+
+.formInput {
+display: flex;
+justify-content: center;
+}
