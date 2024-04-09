@@ -9,23 +9,20 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css"
     />
-    <link rel="stylesheet" href="assets/css/styles-1.css"
+    <link rel="stylesheet" href="assets/css/styles-1.css">
   </head>
   <body>
     <header class="align-center">
       <h1>Marvel Character Search</h1>
     </header>
     <!-- Search Button -->
-    <form class="formInput" action="index-2.html">
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="Enter Movie Here"
-      />
-      <button id="searchBtn" class="ui primary button">Search</button>
-    </form>
+    
+    <button id="searchBtn" class="ui primary button">Search</button>
+   
 
     <!-- Modal -->
+    <form id="formInput">
+      
     <div id="myModal" class="ui modal">
       <div class="header">Enter Search Query</div>
       <div class="content">
@@ -36,13 +33,16 @@
             placeholder="Enter your search query" 
             required
           />
+          
         </div>
+        
       </div>
       <div class="actions">
         <div class="ui button" id="cancelBtn">Cancel</div>
         <div class="ui primary button" id="searchSubmit">Search</div>
       </div>
     </div>
+  </form>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
     <script src="assets/js/script-1.js"></script>
