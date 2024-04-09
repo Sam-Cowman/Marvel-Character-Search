@@ -20,6 +20,7 @@ header h1 {
     top: 10%; /* Adjust the top position to move the header text up */
     left: 50%; /* Center the header text horizontally */
     transform: translateX(-50%); /* Center the header text horizontally */
+    text-align: center;
 }
 
 .header {
@@ -32,7 +33,7 @@ header h1 {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     body {
         background-size: contain; /* Adjust background size to fit smaller screens */
     }
