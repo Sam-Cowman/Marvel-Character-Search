@@ -20,6 +20,9 @@ header h1 {
     top: 10%; /* Adjust the top position to move the header text up */
     left: 50%; /* Center the header text horizontally */
     transform: translateX(-50%); /* Center the header text horizontally */
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .header {
