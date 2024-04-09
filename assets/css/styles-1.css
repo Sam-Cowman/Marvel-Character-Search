@@ -1,24 +1,39 @@
+/* Default styles */
 body {
-    background-color: red;
+    background-image: url('/assets/images/movie-theater-black.jpg'); 
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add relative positioning to the body */
 }
 
-header{
-    color:yellow
+header h1 {
+    color: #fff;
+    font-size: 80px;
+    position: absolute; /* Position the header text absolutely */
+    top: 10%; /* Adjust the top position to move the header text up */
+    left: 50%; /* Center the header text horizontally */
+    transform: translateX(-50%); /* Center the header text horizontally */
 }
 
-header.align-center {
-    text-align: center;
-    margin-top: 50px; /* Adjust the margin-top value as needed */
-}
-
-.formInput {
-display: flex;
-justify-content: center;
+.header {
+    margin-bottom: 80px; /* Add margin-bottom to create space between header and search button */
 }
 
 #searchBtn {
-    display: block;
-    margin: 2em auto;
-    text-align: center;
-   
+    margin-top: 20px; /* Add margin-top to create space between search button and modal */
+    font-size: 24px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Adjust background size to fit smaller screens */
+    }
 }
