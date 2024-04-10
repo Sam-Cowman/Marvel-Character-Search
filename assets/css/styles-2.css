@@ -1,6 +1,13 @@
 :root {
     --margin-size: 5%;
 }
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin-top: 5%;
+    background-color: #2C2C2C;
+    color: #fff;
+}
 #results {
     display: flex;
     justify-content: center;
@@ -16,6 +23,8 @@
 #title {
     margin-left: var(--margin-size);
     font-size: 300%;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 #plot {
@@ -25,7 +34,8 @@
 }
 
 #poster {
-    
+border: solid 5px #FF3131;
+  box-shadow: 10px 10px 10px #05D9FF
 }
 
 .titlePlot {
@@ -36,7 +46,13 @@
 }
 
 #extract {
-
+/* Google Font Styling */
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border: solid 5px #FF3131;
+  padding: 3%;
+  box-shadow: 10px 10px 10px #05D9FF;
 }
 
 @media only screen and (max-width: 768px) {
