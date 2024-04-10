@@ -10,7 +10,7 @@ $(document).ready(function() {
       // If search query is not empty, fetch data from OMDB API
       if (searchQuery.trim() !== "") {
           // Fetch movie information from OMDB API
-          fetch("http://www.omdbapi.com/?apikey=f2ae7509&t=" + searchQuery)
+          fetch("https://www.omdbapi.com/?apikey=f2ae7509&t=" + searchQuery)
               .then(function(response) {
                   if (!response.ok) {
                       throw new Error("Failed to fetch movie data from OMDB API.");
