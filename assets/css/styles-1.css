@@ -1,6 +1,6 @@
 /* Default styles */
 body {
-    background-image: url('/assets/images/movie-theater-black.jpg'); 
+    background-image: url('../images/movie-theater-black.jpg'); 
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-size: cover; /* Ensure the background image covers the entire viewport */
     background-position: center; /* Center the background image */
