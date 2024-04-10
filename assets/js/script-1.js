@@ -29,7 +29,7 @@ $(document).ready(function() {
 
                   // If movie title and plot are not empty, fetch introduction from Wikipedia API
                   if (title && plot) {
-                      fetch("https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&explaintext&titles=" + title + "&origin=*")
+                      fetch("https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro&explaintext&titles=" + title + "%20film" + "&origin=*")
                           .then(function(response) {
                               if (!response.ok) {
                                   throw new Error("Failed to fetch introduction from Wikipedia API.");
