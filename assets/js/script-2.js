@@ -17,8 +17,8 @@ function displayMovieInfo() {
     var extract = getUrlParameter('extract');
 
     // Display movie title, plot, and poster on the page
-    document.getElementById('title').innerText = "Title: " + title;
-    document.getElementById('plot').innerText = "Plot: " + plot;
+    document.getElementById('title').innerText = title;
+    document.getElementById('plot').innerText = plot;
     document.getElementById('poster').src = posterUrl;
     
     // Display extracted introduction about the movie
