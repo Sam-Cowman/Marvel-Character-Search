@@ -23,6 +23,7 @@ header h1 {
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
 .header {
@@ -35,7 +36,7 @@ header h1 {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     body {
         background-size: contain; /* Adjust background size to fit smaller screens */
     }
