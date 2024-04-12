@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Search</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/styles-1.css" />
-  </head>
-  <body>
-    <header class="align-center">
-      <h1>Movie Search</h1>
-    </header>
-    <!-- Search Button -->
 
-    <button id="searchBtn" class="ui primary button">Enjoy the Show!</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Search</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles-1.css" />
+</head>
 
-    <!-- Modal -->
-    <form id="formInput">
-      <div id="myModal" class="ui modal">
-        <div class="header">Enter Movie Title</div>
-        <div class="content">
-          <div class="ui input">
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="Movie Title"
-              required
-            />
-          </div>
-        </div>
-        <div class="actions">
-          <div class="ui button" id="cancelBtn">Cancel</div>
-          <div class="ui primary button" id="searchSubmit">Search</div>
+<body>
+  <header class="align-center">
+    <h1>Movie Search</h1>
+  </header>
+  <!-- Search Button -->
+
+  <button id="searchBtn" class="ui primary button">Enjoy the Show!</button>
+
+  <!-- Modal -->
+  <form id="formInput">
+    <div id="myModal" class="ui modal">
+      <div class="header">Enter Movie Title</div>
+      <div class="content">
+        <div class="ui input">
+          <input type="text" id="searchInput" placeholder="Movie Title" required />
         </div>
       </div>
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
-    <script src="./assets/js/script-1.js"></script>
-  </body>
+      <div class="actions">
+        <div class="ui button" id="cancelBtn">Cancel</div>
+        <div class="ui primary button" id="searchSubmit">Search</div>
+      </div>
+    </div>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  <script src="./assets/js/script-1.js"></script>
+</body>
+
 </html>
