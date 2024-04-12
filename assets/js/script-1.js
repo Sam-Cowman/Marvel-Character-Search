@@ -5,7 +5,7 @@ $(document).ready(function () {
     // Function to handle search submit
     function handleSearchSubmit() {
         // Get the value of the search input
-        var searchQuery = $('#searchInput').val();
+        const searchQuery = $('#searchInput').val();
 
         // If search query is not empty, fetch data from OMDB API
         if (searchQuery.trim() !== "") {
@@ -22,16 +22,14 @@ $(document).ready(function () {
                         throw new Error(data.Error);
                     }
 
-                    // Extract movie title from the OMDB API response
-                    var title = data.Title;
-
+                    const title = data.Title;
                     // Save searched movie title to local storage
                     saveSearchedMovie(title);
 
                     // Extract movie title, plot, and poster URL from the OMDB API response
-                    var title = data.Title;
-                    var plot = data.Plot;
-                    var posterUrl = data.Poster;
+                    
+                    const plot = data.Plot;
+                    const posterUrl = data.Poster;
 
                     // If movie title and plot are not empty, fetch introduction from Wikipedia API
                     if (title && plot) {
@@ -44,9 +42,9 @@ $(document).ready(function () {
                             })
                             .then(function (data) {
                                 // Extract page content from Wikipedia API response
-                                var pages = data.query.pages;
-                                var pageId = Object.keys(pages)[0]; // Get the first (and only) page ID
-                                var extract = pages[pageId].extract;
+                                const pages = data.query.pages;
+                                const pageId = Object.keys(pages)[0]; // Get the first (and only) page ID
+                                const extract = pages[pageId].extract;
 
                                 // Redirect to index-2.html and pass the movie information and extracted introduction as query parameters
                                 window.location.href = "index-2.html?title=" + encodeURIComponent(title) + "&plot=" + encodeURIComponent(plot) + "&posterUrl=" + encodeURIComponent(posterUrl) + "&extract=" + encodeURIComponent(extract);
@@ -73,7 +71,7 @@ $(document).ready(function () {
     // Function to save searched movie title to local storage
     function saveSearchedMovie(title) {
         // Retrieve previously saved movie titles from local storage
-        var savedMovieTitles = JSON.parse(localStorage.getItem('savedMovieTitles')) || [];
+        const savedMovieTitles = JSON.parse(localStorage.getItem('savedMovieTitles')) || [];
 
         // Add current movie title to the list
         savedMovieTitles.push(title);
@@ -84,7 +82,7 @@ $(document).ready(function () {
 
     // Function to display previously searched movie titles on the console
     function displaySavedMovies() {
-        var savedMovieTitles = JSON.parse(localStorage.getItem('savedMovieTitles')) || [];
+        const savedMovieTitles = JSON.parse(localStorage.getItem('savedMovieTitles')) || [];
 
         // Log each saved movie title to the console
         savedMovieTitles.forEach(function (title) {

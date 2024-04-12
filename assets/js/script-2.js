@@ -3,18 +3,18 @@
 // Function to parse URL parameters
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
+    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    const results = regex.exec(location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
 // Function to display movie information
 function displayMovieInfo() {
     // Get movie information from URL parameters
-    var title = getUrlParameter('title');
-    var plot = getUrlParameter('plot');
-    var posterUrl = getUrlParameter('posterUrl');
-    var extract = getUrlParameter('extract');
+    const title = getUrlParameter('title');
+    const plot = getUrlParameter('plot');
+    const posterUrl = getUrlParameter('posterUrl');
+    const extract = getUrlParameter('extract');
 
     // Display movie title, plot, and poster on the page
     document.getElementById('title').innerText = title;
